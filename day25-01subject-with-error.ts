@@ -30,13 +30,13 @@ subject.subscribe({
 });
 
 example.subscribe({
-  next: (value) => console.log('A', value),
-  error: (err) => console.log('A Error:' + err)
+  next: (value) => console.log('B', value),
+  error: (err) => console.log('B Error:' + err)
 });
 
 subject.subscribe({
   next: (value) => console.log('C', value),
-  error: (err) => console.log('A Error:' + err)
+  error: (err) => console.log('C Error:' + err)
 });
 
 source.subscribe(subject);
