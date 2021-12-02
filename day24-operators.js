@@ -10,7 +10,7 @@ https://rxjs.dev/deprecations/multicasting#connectableobservable
 https://rxjs.dev/api/operators/share
 https://blog.jerry-hong.com/series/rxjs/thirty-days-RxJS-24/#share
 */
-var source$ = rxjs_1.interval(1000).pipe(rxjs_1.take(3), rxjs_1.share());
+var source$ = (0, rxjs_1.interval)(1000).pipe((0, rxjs_1.take)(3), (0, rxjs_1.share)());
 var observerA = {
     next: value => console.log('A next: ' + value),
     error: error => console.log('A error: ' + error),

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const rxjs_1 = require("rxjs");
-var source$ = rxjs_1.interval(1000).pipe(rxjs_1.take(3));
+var source$ = (0, rxjs_1.interval)(1000).pipe((0, rxjs_1.take)(3));
 var observerA = {
     next: value => console.log('A next: ' + value),
     error: error => console.log('A error: ' + error),

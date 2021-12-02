@@ -1,17 +1,20 @@
-# 30天精通Rxjs的學習紀錄
+# 30 天精通 Rxjs 的學習紀錄
+
 參考資料:
 
 https://blog.jerry-hong.com/series/rxjs
 
 https://rxjs.dev/api
 
-## 我使用rxjs 7.4.0來做demo學習
-參考資料使用的rxjs應該是5.x版的
+## 我使用 rxjs 7.4.0 來做 demo 學習
 
-所以練習時也會嘗試將deprecated的語法給替換掉
+參考資料使用的 rxjs 應該是 5.x 版的
+
+所以練習時也會嘗試將 deprecated 的語法給替換掉
 
 ## 執行方式
+
 ```
-$ tsc
+$ tsc -w
 $ node <Specify a compiled js file>
 ```

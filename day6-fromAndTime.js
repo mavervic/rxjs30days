@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const rxjs_1 = require("rxjs");
-rxjs_1.from(["Jerry", "Anna"]).subscribe({
+(0, rxjs_1.from)(["Jerry", "Anna"]).subscribe({
     next: function (value) {
         console.log(value);
     },
@@ -14,7 +14,7 @@ rxjs_1.from(["Jerry", "Anna"]).subscribe({
 });
 // 可以傳入 Promise 物件，如下
 // 如果我們傳入 Promise 物件實例，當正常回傳時，就會被送到 next，並立即送出完成通知，如果有錯誤則會送到 error。
-rxjs_1.from(new Promise((resolve, reject) => {
+(0, rxjs_1.from)(new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Hello RxJS!");
     }, 3000);
@@ -30,7 +30,7 @@ rxjs_1.from(new Promise((resolve, reject) => {
     },
 });
 // 其實在訂閱 observable 後，會回傳一個 subscription 物件，這個物件具有釋放資源的unsubscribe 方法，範例如下
-var subscription = rxjs_1.timer(1000, 1000).subscribe({
+var subscription = (0, rxjs_1.timer)(1000, 1000).subscribe({
     next: function (value) {
         console.log(value);
     },

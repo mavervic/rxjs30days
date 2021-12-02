@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const rxjs_1 = require("rxjs");
-const source = rxjs_1.interval(1000).pipe(rxjs_1.take(5));
+const source = (0, rxjs_1.interval)(1000).pipe((0, rxjs_1.take)(5));
 const subject = new rxjs_1.Subject();
-const example = subject.pipe(rxjs_1.map(x => {
+const example = subject.pipe((0, rxjs_1.map)(x => {
     if (x === 1) {
         throw new Error('oops');
     }
@@ -25,11 +25,11 @@ subject.subscribe({
     error: (err) => console.log('A Error:' + err)
 });
 example.subscribe({
-    next: (value) => console.log('A', value),
-    error: (err) => console.log('A Error:' + err)
+    next: (value) => console.log('B', value),
+    error: (err) => console.log('B Error:' + err)
 });
 subject.subscribe({
     next: (value) => console.log('C', value),
-    error: (err) => console.log('A Error:' + err)
+    error: (err) => console.log('C Error:' + err)
 });
 source.subscribe(subject);
