@@ -22,3 +22,5 @@ observable
     },
 });
 console.log("after subscribe");
+// rxjs v8版本即將棄用多個第二個參數可以傳入Scheduler的operators
+(0, rxjs_1.from)([1, 2, 3, 4, 5], rxjs_1.asyncScheduler);
