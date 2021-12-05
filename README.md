@@ -14,7 +14,7 @@ https://rxjs.dev/api
 
 部分練習時會嘗試用自己的想法做做看，做不好再看解答
 
-## 執行方式
+## 純TS執行方式
 
 🚀 純 ts 檔推薦使用[quokka.js](https://quokkajs.com/docs/index.html)這個 vscode 插件動態的查看結果
 
@@ -25,4 +25,6 @@ $ tsc -w
 $ node <Specify a compiled js file>
 ```
 
-🔨html + js or ts 比較，推薦跟著[開始練習 RxJS 前的環境準備](https://ithelp.ithome.com.tw/articles/10238485)參考建置
+## HTML搭配TS執行方式
+
+🔨推薦跟著[開始練習 RxJS 前的環境準備](https://ithelp.ithome.com.tw/articles/10238485)參考建置
